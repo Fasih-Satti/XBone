@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authentication.LoginTab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/login_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="#9C27B0"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome! Please log in to continue."
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="332dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="8dp"
+            android:hint="Email"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="341dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_bkg"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="start">
+
+            <CheckBox
+                android:id="@+id/show_password_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="114dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Login"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/forgot_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Forgot Password?"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

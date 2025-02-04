@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.Home">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal|top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imagefor" />
+
+    <TextView
+        android:id="@+id/thingsYouMustDoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="10dp"
+        android:text="Things You Must Do:"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="60dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/setTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Time:"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/hourEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Hour"
+                android:inputType="number"
+                android:background="@android:drawable/editbox_background"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/minuteEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Minute"
+                android:inputType="number"
+                android:background="@android:drawable/editbox_background"
+                android:padding="10dp" />
+
+            <Spinner
+                android:id="@+id/amPmSpinner"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setAlarmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Set Alarm" />
+    </LinearLayout>
+
+</FrameLayout>

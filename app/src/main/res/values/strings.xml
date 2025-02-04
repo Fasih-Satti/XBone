@@ -1,0 +1,25 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">XBone</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="save">Save</string>
+
+
+    <string name="strong_bones_diet">Eat a balanced diet with calcium and vitamin D to support bone strength.</string>
+    <string name="weight_bearing_exercises">Engage in weight-bearing exercises like walking or strength training to build strong bones.</string>
+    <string name="sunlight_vitamin_d">Get enough sunlight to boost vitamin D levels, which are essential for healthy bones.</string>
+    <string name="calcium_rich_foods">Include calcium-rich foods like dairy, leafy greens, and almonds in your diet to improve bone density.</string>
+    <string name="avoid_harmful_habits">Avoid smoking and excessive alcohol, as they can weaken bones over time.</string>
+
+    <string-array name="status_options">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="am_pm_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+</resources>

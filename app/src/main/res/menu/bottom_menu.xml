@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/Diet"
+        android:title="Habit"
+        android:icon="@drawable/tips"
+        />
+
+
+    <item
+        android:id="@+id/FractureScan"
+        android:title="X-Ray"
+        android:icon="@drawable/x_ray" />
+    <item
+        android:id="@+id/Chat"
+        android:title="Adviser"
+        android:icon="@drawable/aitext" />
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        android:icon="@drawable/profile_msg" />
+
+</menu>

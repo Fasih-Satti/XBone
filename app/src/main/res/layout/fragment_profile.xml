@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:id="@+id/fragment_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="304dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/gradientbackground"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="45dp"
+                android:clickable="true"
+                android:contentDescription="@string/save"
+                android:focusable="true"
+                android:src="@drawable/profile_msg" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fasih-Ur-Rehman"
+                android:textColor="#fff"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/user" />
+
+            <EditText
+                android:id="@+id/user_name_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:text="Fasih-Ur-Rehman"
+                android:textStyle="bold"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/mail_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/mail" />
+
+            <EditText
+                android:id="@+id/user_email_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:text="Fasih@gmail.com"
+                android:textStyle="bold"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/password_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/lock" />
+
+            <EditText
+                android:id="@+id/password_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:text="Password"
+                android:textStyle="bold"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@color/lavender"
+        android:text="Logout"
+        android:textColor="#263238" />
+</LinearLayout>
